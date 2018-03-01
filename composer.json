@@ -1,0 +1,44 @@
+{
+    "name": "superbig/craft-dumper",
+    "description": "A nicer dump()",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "dumper"
+    ],
+    "support": {
+        "docs": "https://github.com/sjelfull/craft-dumper/blob/master/README.md",
+        "issues": "https://github.com/sjelfull/craft-dumper/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Superbig",
+            "homepage": "https://superbig.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "symfony/var-dumper": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "superbig\\dumper\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Dumper",
+        "handle": "dumper",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/sjelfull/craft-dumper/master/CHANGELOG.md",
+        "components": {
+            "dumperService": "superbig\\dumper\\services\\DumperService"
+        },
+        "class": "superbig\\dumper\\Dumper"
+    }
+}
